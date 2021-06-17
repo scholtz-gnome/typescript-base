@@ -1,0 +1,36 @@
+{
+  "name": "typescript-base",
+  "version": "1.0.0",
+  "description": "A base typescript project with a testing environment set up.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "pretest": "npm run build",
+    "test": "jest --watchAll --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scholtz-gnome/typescript-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scholtz-gnome/typescript-base/issues"
+  },
+  "homepage": "https://github.com/scholtz-gnome/typescript-base#readme",
+  "dependencies": {
+    "typescript": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "jest": "^27.0.4",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0"
+  }
+}
