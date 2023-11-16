@@ -18,13 +18,19 @@ npm install
 
 # Running TypeScript
 
-To run `src/main.ts` once
+To run `src/main.ts` once without compiling
 
 ```bash
 npm run start
 ```
 
-To run `src/main.ts` and watch for file changes and run after each save
+To compile your TS
+
+```bash
+npm run build
+```
+
+To run `src/main.ts` and compile on file changes and run after each save
 
 ```bash
 npm run start:dev
