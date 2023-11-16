@@ -12,7 +12,9 @@
     "start": "node ./dist/src/main.js",
     "start:dev": "ts-node-dev --respawn --transpile-only ./src/main.ts",
     "pretest": "npm run build",
-    "test": "jest --watchAll --runInBand"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
   },
   "repository": {
     "type": "git",
