@@ -1,9 +1,15 @@
 console.log('Welcome to TypeScript!');
 
-const hello: { hi: string } = {
-  hi: 'there',
+interface Greeting {
+  message: string;
+  repetitions: number;
+}
+
+const greeting: Greeting = {
+  message: 'Good day',
+  repetitions: 2,
 };
 
-console.log('====================================');
-console.log(hello.hi);
-console.log('====================================');
+for (let i = 0; i < greeting.repetitions; i++) {
+  console.log(greeting.message);
+}
