@@ -4,7 +4,7 @@ A base typescript project with a testing environment set up.
 
 # Set up
 
-Use Node `v20.9.0`
+Use Node `v22.13.1`
 
 ```bash
 nvm use
